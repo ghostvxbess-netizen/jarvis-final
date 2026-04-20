@@ -1,0 +1,32 @@
+/* Убираем стандартные отступы Streamlit */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+
+/* Фиксация поля ввода внизу для iPhone */
+div[data-testid="stChatInputContainer"] {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 1rem;
+    background: transparent;
+}
+
+/* Красивые скругленные блоки сообщений */
+[data-testid="stChatMessage"] {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #30363d;
+}
+
+/* Скрываем лишние элементы (шапку и футер) */
+header {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Адаптация кнопок под нажатия */
+button:active {
+    transform: scale(0.98);
+}
